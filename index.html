@@ -1,43 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Team 1247 - Blood, Sweat and Gears | Robotics & Drone Teams</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kearsarge STEAM Team - Team 1247</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Team 1247</h1>
-    <h2>Blood, Sweat and Gears</h2>
-    <p class="subtitle">FIRST Robotics Competition & Aerial Drone Competition Teams</p>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#robots">FRC Robots</a>
-      <a href="#drones">Drone Team</a>
-      <a href="#outreach">Outreach</a>
-      <a href="#social">Social Media</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Our Programs</h2>
-    <p>
-      We are <strong>Team 1247 – Blood, Sweat and Gears</strong>, a student-led STEM organization that
-      competes in both the <strong>FIRST Robotics Competition (FRC)</strong> and the 
-      <strong>Aerial Drone Competition (ADC)</strong>. Our mission is to innovate, lead, and 
-      inspire through hands-on engineering, coding, aeronautics, and community outreach.
-    </p>
-    <p>
-      Students learn real-world technical and team skills while designing industrial robots and autonomous drones to compete at regional, state, and national events.
-    </p>
-  </section>
+<header>
+  <h1>Kearsarge STEAM Team</h1>
+  <h2 class="team-subtitle">Team 1247</h2>
+  <p class="subtitle">FIRST Robotics Competition & Aerial Drone Competition</p>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#robots">FRC Robots</a>
+    <a href="#drones">Drone Team</a>
+    <a href="#gallery">Photos</a>
+    <a href="#robot-schedule">FRC Schedule</a>
+    <a href="#drone-schedule">Drone Schedule</a>
+    <a href="#sponsors">Sponsors</a>
+    <a href="#social">Social</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Our Team</h2>
+  <p>We are the Kearsarge STEAM Team — Team 1247. We compete in both FRC Robotics and the Aerial Drone Competition, building advanced robots and autonomous drones using engineering, coding, aeronautics, and teamwork.</p>
+</section>
+
+<section id="robots">
+  <h2>FRC Robots</h2>
+  <div class="robot-card">
+    <h3>2024 — “Enter Robot Name”</h3>
+    <p>Capabilities: swerve drive, shooter, climber, Limelight targeting, autonomous scoring.</p>
+    <img src="images/2024robot.jpg" alt="2024 Robot">
+  </div>
+  <div class="robot-card">
+    <h3>2023 — “Enter Robot Name”</h3>
+    <p>Capabilities: cone/cube handling, two-speed drive, auto balance.</p>
+    <img src="images/2023robot.jpg" alt="2023 Robot">
+  </div>
+</section>
+
+<section id="drones">
+  <h2>Aerial Drone Program</h2>
+  <p>Our drone program features design, build, manual flight, autonomous navigation, vision tracking, and payload missions.</p>
+
+  <div class="drone-year">
+    <h3>2024 Drone Season — “Project SkyStrike”</h3>
+
+    <div class="sub-team">
+      <h4>🛠️ Engineering & Build Team</h4>
+      <ul>
+        <li>Carbon fiber frame design</li>
+        <li>Payload drop system with servos</li>
+        <li>Raspberry Pi + Pixhawk control systems</li>
+      </ul>
+    </div>
+
+    <div class="sub-team">
+      <h4>🤖 Autonomous Flight Team</h4>
+      <ul>
+        <li>GPS autonomous navigation</li>
+        <li>Obstacle detection using OpenCV</li>
+        <li>Waypoint flight using MAVLink</li>
+      </ul>
+    </div>
+
+    <div class="sub-team">
+      <h4>🕹️ Manual Flight Team</h4>
+      <ul>
+        <li>FPV obstacle course control</li>
+        <li>Speed precision challenges</li>
+        <li>Live demo team</li>
+      </ul>
+    </div>
+
+    <div class="sub-team">
+      <h4>🎥 Media & Innovation Team</h4>
+      <ul>
+        <li>Flight footage & promotional videos</li>
+        <li>Branding & sponsor documentation</li>
+        <li>YouTube & social media showcases</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Photo Gallery</h2>
+  <p>Build sessions, competitions, flight demos, and outreach events.</p>
+
+  <div class="carousel">
+    <button class="carousel-btn prev">&#10094;</button>
+    <div class="carousel-track">
+      <div class="carousel-slide active"><img src="images/gallery1.jpg" alt=""></div>
+      <div class="carousel-slide"><img src="images/gallery2.jpg" alt=""></div>
+      <div class="carousel-slide"><img src="images/gallery3.jpg" alt=""></div>
+      <div class="carousel-slide"><img src="images/gallery4.jpg" alt=""></div>
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+
+  <div class="carousel-dots">
+    <span class="dot active" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
+    <span class="dot" data-slide="2"></span>
+    <span class="dot" data-slide="3"></span>
+  </div>
+</section>
+
+<section id="robot-schedule">
+  <h2>FRC Team 1247 – Match Schedule</h2>
+  <div class="widget-container">
+    <iframe src="https://www.thebluealliance.com/embed/team/1247/matches" width="100%" height="800"></iframe>
+  </div>
+</section>
+
+<section id="drone-schedule">
+  <h2>Aerial Drone Competition Schedule</h2>
+  <table class="schedule-table">
+    <thead>
+      <tr><th>Date</th><th>Event</th><th>Location</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>March 15, 2025</td><td>ADC Regional</td><td>[City]</td><td>Autonomous/FPV Flight</td></tr>
+      <tr><td>April 5, 2025</td><td>STEM Expo Demo</td><td>[Location]</td><td>Public Outreach</td></tr>
+      <tr><td>May 10–11, 2025</td><td>ADC Championship</td><td>[City]</td><td>Nationals</td></tr>
+    </tbody>
+  </table>
+</section>
+
 <section id="sponsors">
   <h2>Our Sponsors</h2>
-  <p>Thank you to our generous sponsors who power our robotics and drone programs.</p>
-  
   <div class="sponsor-grid">
     <img src="images/sponsor1.png" alt="Sponsor 1">
     <img src="images/sponsor2.png" alt="Sponsor 2">
@@ -45,81 +143,60 @@
     <img src="images/sponsor4.png" alt="Sponsor 4">
   </div>
 </section>
-  <!-- FRC Robots -->
-  <section id="robots">
-    <h2>FRC Robots</h2>
-    <p>Our competition robots, built for the FIRST Robotics Competition.</p>
 
-    <div class="robot-card">
-      <h3>2024 — “Enter Robot Name”</h3>
-      <p>Swerve drive, shooter, vision targeting, climbing system.</p>
-      <img src="images/2024robot.jpg" alt="2024 Robot">
-    </div>
-  
-    <div class="robot-card">
-      <h3>2023 — “Enter Robot Name”</h3>
-      <p>Cone/Cube pickup, two-speed gearbox, autonomous scoring.</p>
-      <img src="images/2023robot.jpg" alt="2023 Robot">
-    </div>
-  </section>
+<section id="social">
+  <h2>Follow Us</h2>
+  <div class="social-links">
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">Facebook</a>
+    <a href="https://www.thebluealliance.com/team/1247" target="_blank">Blue Alliance</a>
+  </div>
+</section>
 
-  <!-- Drone Section -->
-  <section id="drones">
-    <h2>Aerial Drone Competition Team</h2>
-    <p>
-      Our drone team designs, builds, and programs autonomous and manually controlled drones
-      to compete in missions focused on precision flight, object retrieval, and
-      autonomous navigation using computer vision.
-    </p>
-  
-    <div class="drone-card">
-      <h3>2024 — Autonomous Mission Drone</h3>
-      <ul>
-        <li>Obstacle avoidance using Python/OpenCV</li>
-        <li>Waypoint tracking & autonomous flight control</li>
-        <li>Payload delivery mechanism</li>
-      </ul>
-      <img src="images/drone2024.jpg" alt="2024 Competition Drone">
-    </div>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-card">
+    <p><strong>Kearsarge STEAM Team — Team 1247</strong></p>
+    <p>📍 Kearsarge, New Hampshire</p>
+    <p>📧 <a href="mailto:team1247@gmail.com">team1247@gmail.com</a></p>
+    <p>🌐 <a href="https://www.thebluealliance.com/team/1247" target="_blank">Blue Alliance Profile</a></p>
+  </div>
+</section>
 
-    <div class="drone-card">
-      <h3>Flight System Specs</h3>
-      <ul>
-        <li>Controller: Raspberry Pi or Pixhawk (PX4)</li>
-        <li>Programming: Python/ArduPilot/MAVLink</li>
-        <li>Sensors: GPS, LiDAR, Barometer, IMU</li>
-      </ul>
-    </div>
+<footer>
+  <p>&copy; 2025 Kearsarge STEAM Team - Team 1247</p>
+</footer>
 
-    <p>We compete in the REC Foundation Aerial Drone Competition and other student engineering showcases.</p>
-  </section>
+<script>
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
 
-  <!-- Outreach Section -->
-  <section id="outreach">
-    <h2>Community Outreach</h2>
-    <p>We mentor FLL teams, run STEM workshops, and host drone & robotics demo events.</p>
-  </section>
+  let currentSlide = 0;
 
-  <!-- Social Media -->
-  <section id="social">
-    <h2>Follow Us</h2>
-    <div class="social-links">
-      <a href="#">Instagram</a>
-      <a href="#">YouTube</a>
-      <a href="#">Facebook</a>
-      <a href="https://www.thebluealliance.com/team/1247" target="_blank">Blue Alliance</a>
-    </div>
-  </section>
+  function showSlide(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+    currentSlide = index;
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Email:</strong> team1247@gmail.com</p>
-    <p><strong>Location:</strong> [School / City / State]</p>
-  </section>
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === currentSlide);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentSlide);
+    });
+  }
 
-  <footer>
-    <p>&copy; 2025 Team 1247 - Blood, Sweat and Gears. All Rights Reserved.</p>
-  </footer>
+  prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+  nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => showSlide(parseInt(dot.dataset.slide)));
+  });
+
+  setInterval(() => showSlide(currentSlide + 1), 6000);
+</script>
+
 </body>
 </html>
