@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: 5px;
+  color: #f0e6e6;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #b80000;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  text-align: center;
+  color: #8B0000;
+}
+
+/* Robot & Drone Cards */
+.robot-card,
+.drone-card {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.robot-card img,
+.drone-card img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* Social Links */
+.social-links {
+  text-align: center;
+}
+
+.social-links a {
+  margin: 10px;
+  padding: 10px 15px;
+  border: 1px solid #8B0000;
+  color: #8B0000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.social-links a:hover {
+  background-color: #8B0000;
+  color: white;
+}
+
+/* Sponsor Grid - NEW */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.sponsor-grid img {
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.sponsor-grid img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Widget Container */
+.widget-container {
+  max-width: 900px;
+  margin: auto;
+  border: 2px solid #8B0000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+}
+
+/* 🌐 Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  section {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .robot-card,
+  .drone-card {
+    padding: 12px;
+  }
+
+  .widget-container iframe {
+    height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+  }
+
+  .social-links a {
+    display: block;
+    margin: 5px auto;
+    width: 80%;
+  }
+}
